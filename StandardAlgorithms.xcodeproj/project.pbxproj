@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C932D48B2AFA483300AC3AA8 /* StandardAlgortihms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgortihms; sourceTree = BUILT_PRODUCTS_DIR; };
+		C932D48B2AFA483300AC3AA8 /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C932D48E2AFA483300AC3AA8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		C932D4822AFA483300AC3AA8 = {
 			isa = PBXGroup;
 			children = (
-				C932D48D2AFA483300AC3AA8 /* StandardAlgortihms */,
+				C932D48D2AFA483300AC3AA8 /* StandardAlgorithms */,
 				C932D48C2AFA483300AC3AA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		C932D48C2AFA483300AC3AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C932D48B2AFA483300AC3AA8 /* StandardAlgortihms */,
+				C932D48B2AFA483300AC3AA8 /* StandardAlgorithms */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C932D48D2AFA483300AC3AA8 /* StandardAlgortihms */ = {
+		C932D48D2AFA483300AC3AA8 /* StandardAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
 				C932D48E2AFA483300AC3AA8 /* main.swift */,
 			);
-			path = StandardAlgortihms;
+			path = StandardAlgorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C932D48A2AFA483300AC3AA8 /* StandardAlgortihms */ = {
+		C932D48A2AFA483300AC3AA8 /* StandardAlgorithms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C932D4922AFA483300AC3AA8 /* Build configuration list for PBXNativeTarget "StandardAlgortihms" */;
+			buildConfigurationList = C932D4922AFA483300AC3AA8 /* Build configuration list for PBXNativeTarget "StandardAlgorithms" */;
 			buildPhases = (
 				C932D4872AFA483300AC3AA8 /* Sources */,
 				C932D4882AFA483300AC3AA8 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = StandardAlgortihms;
+			name = StandardAlgorithms;
 			productName = StandardAlgortihms;
-			productReference = C932D48B2AFA483300AC3AA8 /* StandardAlgortihms */;
+			productReference = C932D48B2AFA483300AC3AA8 /* StandardAlgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C932D4862AFA483300AC3AA8 /* Build configuration list for PBXProject "StandardAlgortihms" */;
+			buildConfigurationList = C932D4862AFA483300AC3AA8 /* Build configuration list for PBXProject "StandardAlgorithms" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C932D48A2AFA483300AC3AA8 /* StandardAlgortihms */,
+				C932D48A2AFA483300AC3AA8 /* StandardAlgorithms */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C932D4862AFA483300AC3AA8 /* Build configuration list for PBXProject "StandardAlgortihms" */ = {
+		C932D4862AFA483300AC3AA8 /* Build configuration list for PBXProject "StandardAlgorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C932D4902AFA483300AC3AA8 /* Debug */,
@@ -270,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C932D4922AFA483300AC3AA8 /* Build configuration list for PBXNativeTarget "StandardAlgortihms" */ = {
+		C932D4922AFA483300AC3AA8 /* Build configuration list for PBXNativeTarget "StandardAlgorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C932D4932AFA483300AC3AA8 /* Debug */,
