@@ -36,35 +36,30 @@ class Sorting {
             
             while index1 < array1.count && index2 < array2.count {
                     if array1[index1] < array2[index2]{
-                data1[index3] = array1[index1]
-                index1 += 1
-                }
-                else{
-                    data1[index3] = array2[index2]
-                    index2 += 1
-                }
-                index3 += 1
-                
-                while index1 < array1.count {
-                    data1[index3] = array1[index1]
-                    index1 += 1
+                        data1[index3] = array1[index1]
+                        index1 += 1
+                    }
+                    else{
+                        data1[index3] = array2[index2]
+                        index2 += 1
+                    }
                     index3 += 1
-                }
+                    
+                    while index1 < array1.count {
+                        data1[index3] = array1[index1]
+                        index1 += 1
+                        index3 += 1
+                    }
+                    
+                    while index2 < array2.count {
+                        data1[index3] = array2[index2]
+                        index2 += 1
+                        index3 += 1
+                    }
                 
-                while index2 < array2.count {
-                    data1[index3] = array2[index2]
-                    index2 += 1
-                    index3 += 1
-                }
+            }
             
         }
-        
-                    
-            
-            
-            
-        
-        }  
         return data1
     }
 }
