@@ -23,4 +23,12 @@ final class SortingTests: XCTestCase {
             XCTAssertEqual(actual,testCase.expected)
         }
     }
+    
+    func testMergeSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
+        //arange
+        let sorting = Sorting()
+        //act
+        
+        //assert
+    }
 }
