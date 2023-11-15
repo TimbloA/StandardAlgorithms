@@ -92,7 +92,7 @@ class Sorting {
             newData.append(contentsOf: quickSort(right))
             return newData
             
-        }else{
+        } else {
             return data
         }
     }
