@@ -11,7 +11,6 @@ import Foundation
 
 final class functionalitySortingTests: XCTestCase {
     
-    
     let testCases = [(data: [5,1,3,7,4],expected: [1,3,4,5,7]),
                      (data: [2,1,3,-7,4],expected: [-7,1,2,3,4]),
                      (data: [7,4],expected: [4,7]),
@@ -19,6 +18,7 @@ final class functionalitySortingTests: XCTestCase {
                      (data: [100000000,-1000000,2,3,3,23],expected: [-1000000,2,3,3,23,100000000]),
                      (data: [1],expected: [1])]
 
+    // Test for Bubble Sort Functionality
     func testBubbleSortWithManyShuffledArraysOfIntegersReturnsThenInAscendingOrder() {
         //arrange
         let sorting = Sorting()
@@ -30,7 +30,7 @@ final class functionalitySortingTests: XCTestCase {
             XCTAssertEqual(actual,testCase.expected)
         }
     }
-
+    // Test for Merge Sort Functionality
     func testMergeSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
         //arange
         let sorting = Sorting()
@@ -43,7 +43,7 @@ final class functionalitySortingTests: XCTestCase {
             XCTAssertEqual(actual,testCase.expected)
         }
     }
-    
+    // Test for Quick Sort Functionality
     func testQuickSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder(){
         //arange
         let sorting = Sorting()
@@ -65,6 +65,7 @@ final class performanceSortingTests:  XCTestCase {
     
     let testCase = Array(repeating: 0, count: 1000)
     
+    // Test for Bubble Sort Performance
     func testPerformaceBubbleSort() {
         //arrange
         let sorting = Sorting()
@@ -75,7 +76,7 @@ final class performanceSortingTests:  XCTestCase {
             sorting.bubbleSort(testCase)
         }
     }
-    
+    // Test for Merge Sort Performance
     func testPerformaceMergeSort() {
         //arrange
         let sorting = Sorting()
@@ -86,7 +87,7 @@ final class performanceSortingTests:  XCTestCase {
             sorting.mergeSort(testCase)
         }
     }
-    
+    // Test for Quick Sort Performance
     func testPerformaceQuickSort() {
         //arrange
         let sorting = Sorting()
