@@ -8,27 +8,20 @@
 import Foundation
 
 class Sorting {
+    
     func bubbleSort(_ data: [Int]) -> [Int] {
+        var data = data
         if data.count > 1{
             
-            
-            if data[0]==2 {
-                return [1,2,3,4,7]
+            for i in 0..<data.count {
+                for j in 0..<(data.count-i-1) {
+                    if data[j+1] < data[j]{
+                        data.swapAt(j,j+1)
+                    }
+                }
             }
-            else if data[0] == 7 {
-                return [4,7]
-            }
-            else if data[0] == 5 {
-                return [1,3,4,5,7]
-            }
-            else{
-                return data
-            }
-            
-        }else{
-            return data
         }
-    
+        return data
     }
     
     func mergeSort(_ data: [Int]) -> [Int] {
@@ -96,8 +89,5 @@ class Sorting {
             return data
         }
     }
-    
-    
-    
     
 }
