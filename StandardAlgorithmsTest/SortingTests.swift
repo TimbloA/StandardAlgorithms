@@ -9,7 +9,7 @@ import XCTest
 
 import Foundation
 
-final class SortingTests: XCTestCase {
+final class functionalitySortingTests: XCTestCase {
     
     
     let testCases = [(data: [5,1,3,7,4],expected: [1,3,4,5,7]),
@@ -30,19 +30,7 @@ final class SortingTests: XCTestCase {
             XCTAssertEqual(actual,testCase.expected)
         }
     }
-    
-    func testPerformaceBubbleSort() {
-        let sorting = Sorting()
-        let testCases = [(data: [5,1,3,7,4],expected: [1,3,4,5,7])]
-                        
-        measure {
-            for testCase in testCases {
-                let actual = sorting.bubbleSort(testCase.data)
-                XCTAssertEqual(actual,testCase.expected)
-            }
-        }
-    }
-    
+
     func testMergeSortWithManyShuffledArraysOfIntegersReturnsThemInAscendingOrder() {
         //arange
         let sorting = Sorting()
@@ -53,18 +41,6 @@ final class SortingTests: XCTestCase {
         for testCase in testCases {
             let actual = sorting.mergeSort(testCase.data)
             XCTAssertEqual(actual,testCase.expected)
-        }
-    }
-    
-    func testPerformaceMergeSort() {
-        let sorting = Sorting()
-        let testCases = [(data: [5,1,3,7,4],expected: [1,3,4,5,7])]
-                        
-        measure {
-            for testCase in testCases {
-                let actual = sorting.mergeSort(testCase.data)
-                XCTAssertEqual(actual,testCase.expected)
-            }
         }
     }
     
@@ -82,15 +58,47 @@ final class SortingTests: XCTestCase {
         }
     }
     
-    func testPerformaceQuickSort() {
+    
+}
+
+final class performanceSortingTests:  XCTestCase {
+    
+    let testCase = Array(repeating: 0, count: 1000)
+    
+    func testPerformaceBubbleSort() {
+        //arrange
         let sorting = Sorting()
-        let testCases = [(data: [5,1,3,7,4],expected: [1,3,4,5,7])]
-                        
+        //act
+        
+        //assert
         measure {
-            for testCase in testCases {
-                let actual = sorting.quickSort(testCase.data)
-                XCTAssertEqual(actual,testCase.expected)
-            }
+            sorting.bubbleSort(testCase)
         }
     }
+    
+    func testPerformaceMergeSort() {
+        //arrange
+        let sorting = Sorting()
+        //act
+        
+        //assert
+        measure {
+            sorting.mergeSort(testCase)
+        }
+    }
+    
+    func testPerformaceQuickSort() {
+        //arrange
+        let sorting = Sorting()
+        //act
+        
+        //assert
+        measure {
+            sorting.quickSort(testCase)
+        }
+    }
+    
+    
+    
+    
 }
