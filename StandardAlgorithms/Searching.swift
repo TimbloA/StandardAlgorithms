@@ -9,25 +9,48 @@ import Foundation
 
 class Searching {
     
-    func linearSearch(_ array: [Int], _ item: Int) -> [String] {
+    func linearSearch(_ array: [Int], _ item: Int) -> String {
         
         var found = false
-        var location = Int()
         
         for i in 0...array.count {
             if item == array[i] {
                 found = true
-                location = i
                 break
             }
         }
         
         if found == true {
-            return ["\(item) was the \(location+1) value in this array"]
+            return "\(item) was found in this array"
         }else {
-            return ["\(item) was not found in this array"]
+            return "\(item) was not found in this array"
         }
+    }
+    
+    func binarySearch(_ array: [Int],_ item: Int) -> String {
+        
+        var found = false
+        var left = 0
+        var right = array.count - 1
         
         
+        while left <= right && found == false {
+            let midpoint = (left+right)/2
+            
+            if array[midpoint] == item {
+                found = true
+                break
+            }else if array[midpoint] < item {
+                left = midpoint + 1
+            }else{
+                right = midpoint - 1
+            }
+        }
+        if found == true {
+            return "\(item) was found in this array"
+        } else{
+            return "\(item) was not found in this array"
+        }
+            
     }
 }
