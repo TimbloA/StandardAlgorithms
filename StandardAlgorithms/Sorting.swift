@@ -90,4 +90,24 @@ class Sorting {
         }
     }
     
+    
+    func insertionSort(_ data: [Int]) -> [Int] {
+        if data.count > 1{
+            var sortedArray: [Int] = Array()
+            sortedArray.append(data[0])
+            
+            for i in 1...data.count -  1 {
+                for j in stride(from: sortedArray.count - 1, to: 0, by: -1) {
+                    if data[i] >= sortedArray[j] {
+                        sortedArray.append(data[i])
+                        
+                    }
+                }
+            }
+            return sortedArray
+        }else{
+            return data
+        }
+        
+    }
 }
