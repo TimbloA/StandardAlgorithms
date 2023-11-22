@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4799B8AA2B0E774D002C979D /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4799B8A92B0E774D002C979D /* Information.swift */; };
 		C932D48F2AFA483300AC3AA8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932D48E2AFA483300AC3AA8 /* main.swift */; };
 		C99512E32B0649B000090DF6 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99512E22B0649B000090DF6 /* Searching.swift */; };
 		C99512E42B0649C600090DF6 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99512E22B0649B000090DF6 /* Searching.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		4799B8A62B038EE6002C979D /* StandardAlgorithms.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StandardAlgorithms.xctestplan; sourceTree = "<group>"; };
+		4799B8A92B0E774D002C979D /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		C932D48B2AFA483300AC3AA8 /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		C932D48E2AFA483300AC3AA8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C932D4992AFA52DF00AC3AA8 /* StandardAlgorithmsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				C932D48E2AFA483300AC3AA8 /* main.swift */,
 				C99A991E2AFE9659002DE12F /* Sorting.swift */,
 				C99512E22B0649B000090DF6 /* Searching.swift */,
+				4799B8A92B0E774D002C979D /* Information.swift */,
 			);
 			path = StandardAlgorithms;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				C99512E32B0649B000090DF6 /* Searching.swift in Sources */,
 				C99A991F2AFE9659002DE12F /* Sorting.swift in Sources */,
+				4799B8AA2B0E774D002C979D /* Information.swift in Sources */,
 				C932D48F2AFA483300AC3AA8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

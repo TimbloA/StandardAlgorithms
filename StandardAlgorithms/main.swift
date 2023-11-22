@@ -7,11 +7,19 @@
 
 import Foundation
 
-//print("Hello, World!")
-    
-var a = 5
-a += 7
+print("""
+      Welcome to Standard Algorithms!
+      Which Algorithm would you like to learn about:
+      Sorting:
+      1. Bubble Sort
+      2. Merge Sort
+      3. Quick Sort
+      4. Insertion Sort
+      Searching:
+      5. Linear Search
+      6. Binary Search
+      """)
+var userInput = readLine()
+print(userInput!)
 
-let b = "HI EVERYONE I'M LOSING MY VOICE!"
 
-print("A is now: \(a)")

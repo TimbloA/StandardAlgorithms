@@ -105,7 +105,22 @@ final class performanceSortingTests:  XCTestCase {
         measure {
             sorting.quickSort(testCase)
         }
+        
     }
+    
+    // Test for Insertion Sort Performance
+    func testPerformaceInsertionSort() {
+        //arrange
+        let sorting = Sorting()
+        //act
+        
+        //assert
+        measure {
+            sorting.insertionSort(testCase)
+        }
+        
+    }
+
     
     
     

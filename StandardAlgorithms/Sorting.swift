@@ -92,22 +92,24 @@ class Sorting {
     
     
     func insertionSort(_ data: [Int]) -> [Int] {
-        if data.count > 1{
-            var sortedArray: [Int] = Array()
-            sortedArray.append(data[0])
+        var data = data
+        if data.count > 1 {
             
-            for i in 1...data.count -  1 {
-                for j in stride(from: sortedArray.count - 1, to: 0, by: -1) {
-                    if data[i] >= sortedArray[j] {
-                        sortedArray.append(data[i])
-                        
-                    }
+            for i in 1..<data.count {
+                let currentVal = data[i]
+                var j = i-1
+                
+                while j >= 0 && currentVal < data[j]{
+                    data[j+1] = data[j]
+                    j-=1
                 }
+                data[j+1] = currentVal
+                        
+                
             }
-            return sortedArray
+            return data
         }else{
             return data
         }
-        
     }
 }
